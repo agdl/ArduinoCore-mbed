@@ -15,10 +15,6 @@ AnalogPinDescription g_AAnalogPinDescription[] = {
   { PA_6,         NULL }     // A7    ADC1_INP7
 };
 
-AnalogPinDescription g_AAnalogOutPinDescription[] = {
-  { PA_4,         NULL },    // A6    DAC1_OUT1
-};
-
 PinDescription g_APinDescription[] = {
   // D0 - D7
   { PH_15,        NULL, NULL, NULL },    // D0
@@ -40,188 +36,188 @@ PinDescription g_APinDescription[] = {
   { PA_9,         NULL, NULL, NULL },    // D14
 
   // A0 - A6
-  { PA_0C,        NULL, NULL, NULL },    // A0    ADC2_INP0
-  { PA_1C,        NULL, NULL, NULL },    // A1    ADC2_INP1
-  { PC_2C,        NULL, NULL, NULL },    // A2    ADC3_INP0
-  { PC_3C,        NULL, NULL, NULL },    // A3    ADC3_INP1
-  { PC_2_ALT0,    NULL, NULL, NULL },    // A4    ADC1_INP12
-  { PC_3_ALT0,    NULL, NULL, NULL },    // A5    ADC1_INP13
-  { PA_4,         NULL, NULL, NULL },    // A6    ADC1_INP18
-  { PA_6,         NULL, NULL, NULL },    // A7    ADC1_INP7
+  { PA_0C,        NULL, NULL, NULL },    // A0    ADC2_INP0 D15
+  { PA_1C,        NULL, NULL, NULL },    // A1    ADC2_INP1 D16
+  { PC_2C,        NULL, NULL, NULL },    // A2    ADC3_INP0 D17
+  { PC_3C,        NULL, NULL, NULL },    // A3    ADC3_INP1 D18
+  { PC_2_ALT0,    NULL, NULL, NULL },    // A4    ADC1_INP12 D19
+  { PC_3_ALT0,    NULL, NULL, NULL },    // A5    ADC1_INP13 D20
+  { PA_4,         NULL, NULL, NULL },    // A6    ADC1_INP18 D21
+  { PA_6,         NULL, NULL, NULL },    // A7    ADC1_INP7 D22
 
   // LEDS
   { PK_5,         NULL, NULL, NULL },    // LEDR
   { PK_6,         NULL, NULL, NULL },    // LEDG
   { PK_7,         NULL, NULL, NULL },    // LEDB
 
-  { PA_0,         NULL, NULL, NULL },
-  { PA_1,         NULL, NULL, NULL },
-  { PA_2,         NULL, NULL, NULL },
-  { PA_3,         NULL, NULL, NULL },
-  { PA_4,         NULL, NULL, NULL },
-  { PA_5,         NULL, NULL, NULL },
-  { PA_6,         NULL, NULL, NULL },
-  { PA_7,         NULL, NULL, NULL },
-  { PA_8,         NULL, NULL, NULL },
-  { PA_9,         NULL, NULL, NULL },
-  { PA_10,        NULL, NULL, NULL },
-  { PA_11,        NULL, NULL, NULL },
-  { PA_12,        NULL, NULL, NULL },
-  { PA_13,        NULL, NULL, NULL },
-  { PA_14,        NULL, NULL, NULL },
-  { PA_15,        NULL, NULL, NULL },
-  { PB_0,         NULL, NULL, NULL },
-  { PB_1,         NULL, NULL, NULL },
-  { PB_2,         NULL, NULL, NULL },
-  { PB_3,         NULL, NULL, NULL },
-  { PB_4,         NULL, NULL, NULL },
-  { PB_5,         NULL, NULL, NULL },
-  { PB_6,         NULL, NULL, NULL },
-  { PB_7,         NULL, NULL, NULL },
-  { PB_8,         NULL, NULL, NULL },
-  { PB_9,         NULL, NULL, NULL },
-  { PB_10,        NULL, NULL, NULL },
-  { PB_11,        NULL, NULL, NULL },
-  { PB_12,        NULL, NULL, NULL },
-  { PB_13,        NULL, NULL, NULL },
-  { PB_14,        NULL, NULL, NULL },
-  { PB_15,        NULL, NULL, NULL },
-  { PC_0,         NULL, NULL, NULL },
-  { PC_1,         NULL, NULL, NULL },
-  { PC_2,         NULL, NULL, NULL },
-  { PC_3,         NULL, NULL, NULL },
-  { PC_4,         NULL, NULL, NULL },
-  { PC_5,         NULL, NULL, NULL },
-  { PC_6,         NULL, NULL, NULL },
-  { PC_7,         NULL, NULL, NULL },
-  { PC_8,         NULL, NULL, NULL },
-  { PC_9,         NULL, NULL, NULL },
-  { PC_10,        NULL, NULL, NULL },
-  { PC_11,        NULL, NULL, NULL },
-  { PC_12,        NULL, NULL, NULL },
-  { PC_13,        NULL, NULL, NULL },
-  { PC_14,        NULL, NULL, NULL },
-  { PC_15,        NULL, NULL, NULL },
-  { PD_0,         NULL, NULL, NULL },
-  { PD_1,         NULL, NULL, NULL },
-  { PD_2,         NULL, NULL, NULL },
-  { PD_3,         NULL, NULL, NULL },
-  { PD_4,         NULL, NULL, NULL },
-  { PD_5,         NULL, NULL, NULL },
-  { PD_6,         NULL, NULL, NULL },
-  { PD_7,         NULL, NULL, NULL },
-  { PD_8,         NULL, NULL, NULL },
-  { PD_9,         NULL, NULL, NULL },
-  { PD_10,        NULL, NULL, NULL },
-  { PD_11,        NULL, NULL, NULL },
-  { PD_12,        NULL, NULL, NULL },
-  { PD_13,        NULL, NULL, NULL },
-  { PD_14,        NULL, NULL, NULL },
-  { PD_15,        NULL, NULL, NULL },
-  { PE_0,         NULL, NULL, NULL },
-  { PE_1,         NULL, NULL, NULL },
-  { PE_2,         NULL, NULL, NULL },
-  { PE_3,         NULL, NULL, NULL },
-  { PE_4,         NULL, NULL, NULL },
-  { PE_5,         NULL, NULL, NULL },
-  { PE_6,         NULL, NULL, NULL },
-  { PE_7,         NULL, NULL, NULL },
-  { PE_8,         NULL, NULL, NULL },
-  { PE_9,         NULL, NULL, NULL },
-  { PE_10,        NULL, NULL, NULL },
-  { PE_11,        NULL, NULL, NULL },
-  { PE_12,        NULL, NULL, NULL },
-  { PE_13,        NULL, NULL, NULL },
-  { PE_14,        NULL, NULL, NULL },
-  { PE_15,        NULL, NULL, NULL },
-  { PF_0,         NULL, NULL, NULL },
-  { PF_1,         NULL, NULL, NULL },
-  { PF_2,         NULL, NULL, NULL },
-  { PF_3,         NULL, NULL, NULL },
-  { PF_4,         NULL, NULL, NULL },
-  { PF_5,         NULL, NULL, NULL },
-  { PF_6,         NULL, NULL, NULL },
-  { PF_7,         NULL, NULL, NULL },
-  { PF_8,         NULL, NULL, NULL },
-  { PF_9,         NULL, NULL, NULL },
-  { PF_10,        NULL, NULL, NULL },
-  { PF_11,        NULL, NULL, NULL },
-  { PF_12,        NULL, NULL, NULL },
-  { PF_13,        NULL, NULL, NULL },
-  { PF_14,        NULL, NULL, NULL },
-  { PF_15,        NULL, NULL, NULL },
-  { PG_0,         NULL, NULL, NULL },
-  { PG_1,         NULL, NULL, NULL },
-  { PG_2,         NULL, NULL, NULL },
-  { PG_3,         NULL, NULL, NULL },
-  { PG_4,         NULL, NULL, NULL },
-  { PG_5,         NULL, NULL, NULL },
-  { PG_6,         NULL, NULL, NULL },
-  { PG_7,         NULL, NULL, NULL },
-  { PG_8,         NULL, NULL, NULL },
-  { PG_9,         NULL, NULL, NULL },
-  { PG_10,        NULL, NULL, NULL },
-  { PG_11,        NULL, NULL, NULL },
-  { PG_12,        NULL, NULL, NULL },
-  { PG_13,        NULL, NULL, NULL },
-  { PG_14,        NULL, NULL, NULL },
-  { PG_15,        NULL, NULL, NULL },
-  { PH_0,         NULL, NULL, NULL },
-  { PH_1,         NULL, NULL, NULL },
-  { PH_2,         NULL, NULL, NULL },
-  { PH_3,         NULL, NULL, NULL },
-  { PH_4,         NULL, NULL, NULL },
-  { PH_5,         NULL, NULL, NULL },
-  { PH_6,         NULL, NULL, NULL },
-  { PH_7,         NULL, NULL, NULL },
-  { PH_8,         NULL, NULL, NULL },
-  { PH_9,         NULL, NULL, NULL },
-  { PH_10,        NULL, NULL, NULL },
-  { PH_11,        NULL, NULL, NULL },
-  { PH_12,        NULL, NULL, NULL },
-  { PH_13,        NULL, NULL, NULL },
-  { PH_14,        NULL, NULL, NULL },
-  { PH_15,        NULL, NULL, NULL },
-  { PI_0,         NULL, NULL, NULL },
-  { PI_1,         NULL, NULL, NULL },
-  { PI_2,         NULL, NULL, NULL },
-  { PI_3,         NULL, NULL, NULL },
-  { PI_4,         NULL, NULL, NULL },
-  { PI_5,         NULL, NULL, NULL },
-  { PI_6,         NULL, NULL, NULL },
-  { PI_7,         NULL, NULL, NULL },
-  { PI_8,         NULL, NULL, NULL },
-  { PI_9,         NULL, NULL, NULL },
-  { PI_10,        NULL, NULL, NULL },
-  { PI_11,        NULL, NULL, NULL },
-  { PI_12,        NULL, NULL, NULL },
-  { PI_13,        NULL, NULL, NULL },
-  { PI_14,        NULL, NULL, NULL },
-  { PI_15,        NULL, NULL, NULL },
-  { PJ_0,         NULL, NULL, NULL },
-  { PJ_1,         NULL, NULL, NULL },
-  { PJ_2,         NULL, NULL, NULL },
-  { PJ_3,         NULL, NULL, NULL },
-  { PJ_4,         NULL, NULL, NULL },
-  { PJ_5,         NULL, NULL, NULL },
-  { PJ_6,         NULL, NULL, NULL },
-  { PJ_7,         NULL, NULL, NULL },
-  { PJ_8,         NULL, NULL, NULL },
-  { PJ_9,         NULL, NULL, NULL },
-  { PJ_10,        NULL, NULL, NULL },
-  { PJ_11,        NULL, NULL, NULL },
-  { PJ_12,        NULL, NULL, NULL },
-  { PJ_13,        NULL, NULL, NULL },
-  { PJ_14,        NULL, NULL, NULL },
-  { PJ_15,        NULL, NULL, NULL },
-  { PK_0,         NULL, NULL, NULL },
-  { PK_1,         NULL, NULL, NULL },
-  { PK_2,         NULL, NULL, NULL },
-  { PK_3,         NULL, NULL, NULL },
-  { PK_4,         NULL, NULL, NULL },
-  { PK_5,         NULL, NULL, NULL },
-  { PK_6,         NULL, NULL, NULL },
-  { PK_7,         NULL, NULL, NULL },
+  { PA_0,         NULL, NULL, NULL }, //D26
+  { PA_1,         NULL, NULL, NULL }, //D27
+  { PA_2,         NULL, NULL, NULL }, //D28
+  { PA_3,         NULL, NULL, NULL }, //D29
+  { PA_4,         NULL, NULL, NULL }, //D30
+  { PA_5,         NULL, NULL, NULL }, //D31
+  { PA_6,         NULL, NULL, NULL }, //D32
+  { PA_7,         NULL, NULL, NULL }, //D33
+  { PA_8,         NULL, NULL, NULL }, //D34
+  { PA_9,         NULL, NULL, NULL }, //D35
+  { PA_10,        NULL, NULL, NULL }, //D36
+  { PA_11,        NULL, NULL, NULL }, //D37
+  { PA_12,        NULL, NULL, NULL }, //D38
+  { PA_13,        NULL, NULL, NULL }, //D39
+  { PA_14,        NULL, NULL, NULL }, //D40
+  { PA_15,        NULL, NULL, NULL }, //D41
+  { PB_0,         NULL, NULL, NULL }, //D42
+  { PB_1,         NULL, NULL, NULL }, //D43
+  { PB_2,         NULL, NULL, NULL }, //D44
+  { PB_3,         NULL, NULL, NULL }, //D45
+  { PB_4,         NULL, NULL, NULL }, //D46
+  { PB_5,         NULL, NULL, NULL }, //D47
+  { PB_6,         NULL, NULL, NULL }, //D48
+  { PB_7,         NULL, NULL, NULL }, //D49
+  { PB_8,         NULL, NULL, NULL }, //D50
+  { PB_9,         NULL, NULL, NULL }, //D51
+  { PB_10,        NULL, NULL, NULL }, //D52
+  { PB_11,        NULL, NULL, NULL }, //D53
+  { PB_12,        NULL, NULL, NULL }, //D54
+  { PB_13,        NULL, NULL, NULL }, //D55
+  { PB_14,        NULL, NULL, NULL }, //D56
+  { PB_15,        NULL, NULL, NULL }, //D57
+  { PC_0,         NULL, NULL, NULL }, //D58
+  { PC_1,         NULL, NULL, NULL }, //D59
+  { PC_2,         NULL, NULL, NULL }, //D60
+  { PC_3,         NULL, NULL, NULL }, //D61
+  { PC_4,         NULL, NULL, NULL }, //D62
+  { PC_5,         NULL, NULL, NULL }, //D63
+  { PC_6,         NULL, NULL, NULL }, //D64
+  { PC_7,         NULL, NULL, NULL }, //D65
+  { PC_8,         NULL, NULL, NULL }, //D66
+  { PC_9,         NULL, NULL, NULL }, //D67
+  { PC_10,        NULL, NULL, NULL }, //D68
+  { PC_11,        NULL, NULL, NULL }, //D69
+  { PC_12,        NULL, NULL, NULL }, //D70
+  { PC_13,        NULL, NULL, NULL }, //D71
+  { PC_14,        NULL, NULL, NULL }, //D72
+  { PC_15,        NULL, NULL, NULL }, //D73
+  { PD_0,         NULL, NULL, NULL }, //D74
+  { PD_1,         NULL, NULL, NULL }, //D75
+  { PD_2,         NULL, NULL, NULL }, //D76
+  { PD_3,         NULL, NULL, NULL }, //D77
+  { PD_4,         NULL, NULL, NULL }, //D78
+  { PD_5,         NULL, NULL, NULL }, //D79
+  { PD_6,         NULL, NULL, NULL }, //D80
+  { PD_7,         NULL, NULL, NULL }, //D81
+  { PD_8,         NULL, NULL, NULL }, //D82
+  { PD_9,         NULL, NULL, NULL }, //D83
+  { PD_10,        NULL, NULL, NULL }, //D84
+  { PD_11,        NULL, NULL, NULL }, //D85
+  { PD_12,        NULL, NULL, NULL }, //D86
+  { PD_13,        NULL, NULL, NULL }, //D87
+  { PD_14,        NULL, NULL, NULL }, //D88
+  { PD_15,        NULL, NULL, NULL }, //D89
+  { PE_0,         NULL, NULL, NULL }, //D90
+  { PE_1,         NULL, NULL, NULL }, //D91
+  { PE_2,         NULL, NULL, NULL }, //D92
+  { PE_3,         NULL, NULL, NULL }, //D93
+  { PE_4,         NULL, NULL, NULL }, //D94
+  { PE_5,         NULL, NULL, NULL }, //D95
+  { PE_6,         NULL, NULL, NULL }, //D96
+  { PE_7,         NULL, NULL, NULL }, //D97
+  { PE_8,         NULL, NULL, NULL }, //D98
+  { PE_9,         NULL, NULL, NULL }, //D99
+  { PE_10,        NULL, NULL, NULL }, //D100
+  { PE_11,        NULL, NULL, NULL }, //D101
+  { PE_12,        NULL, NULL, NULL }, //D102
+  { PE_13,        NULL, NULL, NULL }, //D103
+  { PE_14,        NULL, NULL, NULL }, //D104
+  { PE_15,        NULL, NULL, NULL }, //D105
+  { PF_0,         NULL, NULL, NULL }, //D106
+  { PF_1,         NULL, NULL, NULL }, //D107
+  { PF_2,         NULL, NULL, NULL }, //D108
+  { PF_3,         NULL, NULL, NULL }, //D109
+  { PF_4,         NULL, NULL, NULL }, //D110
+  { PF_5,         NULL, NULL, NULL }, //D111
+  { PF_6,         NULL, NULL, NULL }, //D112
+  { PF_7,         NULL, NULL, NULL }, //D113
+  { PF_8,         NULL, NULL, NULL }, //D114
+  { PF_9,         NULL, NULL, NULL }, //D115
+  { PF_10,        NULL, NULL, NULL }, //D116
+  { PF_11,        NULL, NULL, NULL }, //D117
+  { PF_12,        NULL, NULL, NULL }, //D118
+  { PF_13,        NULL, NULL, NULL }, //D119
+  { PF_14,        NULL, NULL, NULL }, //D120
+  { PF_15,        NULL, NULL, NULL }, //D121
+  { PG_0,         NULL, NULL, NULL }, //D122
+  { PG_1,         NULL, NULL, NULL }, //D123
+  { PG_2,         NULL, NULL, NULL }, //D124
+  { PG_3,         NULL, NULL, NULL }, //D125
+  { PG_4,         NULL, NULL, NULL }, //D126
+  { PG_5,         NULL, NULL, NULL }, //D127
+  { PG_6,         NULL, NULL, NULL }, //D128
+  { PG_7,         NULL, NULL, NULL }, //D129
+  { PG_8,         NULL, NULL, NULL }, //D130
+  { PG_9,         NULL, NULL, NULL }, //D131
+  { PG_10,        NULL, NULL, NULL }, //D132
+  { PG_11,        NULL, NULL, NULL }, //D133
+  { PG_12,        NULL, NULL, NULL }, //D134
+  { PG_13,        NULL, NULL, NULL }, //D135
+  { PG_14,        NULL, NULL, NULL }, //D136
+  { PG_15,        NULL, NULL, NULL }, //D137
+  { PH_0,         NULL, NULL, NULL }, //D138
+  { PH_1,         NULL, NULL, NULL }, //D139
+  { PH_2,         NULL, NULL, NULL }, //D140
+  { PH_3,         NULL, NULL, NULL }, //D141
+  { PH_4,         NULL, NULL, NULL }, //D142
+  { PH_5,         NULL, NULL, NULL }, //D143
+  { PH_6,         NULL, NULL, NULL }, //D144
+  { PH_7,         NULL, NULL, NULL }, //D145
+  { PH_8,         NULL, NULL, NULL }, //D146
+  { PH_9,         NULL, NULL, NULL }, //D147
+  { PH_10,        NULL, NULL, NULL }, //D148
+  { PH_11,        NULL, NULL, NULL }, //D149
+  { PH_12,        NULL, NULL, NULL }, //D150
+  { PH_13,        NULL, NULL, NULL }, //D151
+  { PH_14,        NULL, NULL, NULL }, //D152
+  { PH_15,        NULL, NULL, NULL }, //D153
+  { PI_0,         NULL, NULL, NULL }, //D154
+  { PI_1,         NULL, NULL, NULL }, //D155
+  { PI_2,         NULL, NULL, NULL }, //D156
+  { PI_3,         NULL, NULL, NULL }, //D157
+  { PI_4,         NULL, NULL, NULL }, //D158
+  { PI_5,         NULL, NULL, NULL }, //D159
+  { PI_6,         NULL, NULL, NULL }, //D160
+  { PI_7,         NULL, NULL, NULL }, //D161
+  { PI_8,         NULL, NULL, NULL }, //D162
+  { PI_9,         NULL, NULL, NULL }, //D163
+  { PI_10,        NULL, NULL, NULL }, //D164
+  { PI_11,        NULL, NULL, NULL }, //D165
+  { PI_12,        NULL, NULL, NULL }, //D166
+  { PI_13,        NULL, NULL, NULL }, //D167
+  { PI_14,        NULL, NULL, NULL }, //D168
+  { PI_15,        NULL, NULL, NULL }, //D169
+  { PJ_0,         NULL, NULL, NULL }, //D170
+  { PJ_1,         NULL, NULL, NULL }, //D171
+  { PJ_2,         NULL, NULL, NULL }, //D172
+  { PJ_3,         NULL, NULL, NULL }, //D173
+  { PJ_4,         NULL, NULL, NULL }, //D174
+  { PJ_5,         NULL, NULL, NULL }, //D175
+  { PJ_6,         NULL, NULL, NULL }, //D176
+  { PJ_7,         NULL, NULL, NULL }, //D177
+  { PJ_8,         NULL, NULL, NULL }, //D178
+  { PJ_9,         NULL, NULL, NULL }, //D179
+  { PJ_10,        NULL, NULL, NULL }, //D180
+  { PJ_11,        NULL, NULL, NULL }, //D181
+  { PJ_12,        NULL, NULL, NULL }, //D182
+  { PJ_13,        NULL, NULL, NULL }, //D183
+  { PJ_14,        NULL, NULL, NULL }, //D184
+  { PJ_15,        NULL, NULL, NULL }, //D185
+  { PK_0,         NULL, NULL, NULL }, //D186
+  { PK_1,         NULL, NULL, NULL }, //D187
+  { PK_2,         NULL, NULL, NULL }, //D188
+  { PK_3,         NULL, NULL, NULL }, //D189
+  { PK_4,         NULL, NULL, NULL }, //D190
+  { PK_5,         NULL, NULL, NULL }, //D191
+  { PK_6,         NULL, NULL, NULL }, //D192
+  { PK_7,         NULL, NULL, NULL }, //D193
 };
 
 extern "C" {
@@ -258,15 +254,18 @@ class SecureQSPIFBlockDevice: public QSPIFBlockDevice {
 static uint8_t *_boardInfo = (uint8_t*)(0x801F000);
 static bool has_otp_info = false;
 
+static SecureQSPIFBlockDevice secure_root;
+
 // 8Kbit secure OTP area (on MX25L12833F)
 bool getSecureFlashData() {
-    static PortentaBoardInfo info;
-    static SecureQSPIFBlockDevice secure_root;
+    static PortentaBoardInfo* info = new PortentaBoardInfo();
     secure_root.init();
-    auto ret = secure_root.readSecure(&info, 0, sizeof(PortentaBoardInfo));
-    if (info.magic == OTP_QSPI_MAGIC) {
-      _boardInfo = (uint8_t*)&info;
+    auto ret = secure_root.readSecure(info, 0, sizeof(PortentaBoardInfo));
+    if (info->magic == OTP_QSPI_MAGIC) {
+      _boardInfo = (uint8_t*)info;
       has_otp_info = true;
+    } else {
+      delete info;
     }
     secure_root.deinit();
     return ret == 0;
